@@ -6,7 +6,12 @@
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para correr en modo de desarrollo:
+
+    npm install
+    ng serve
+
+Luego acceder a: http://localhost:4200
 
 ## Code scaffolding
 
