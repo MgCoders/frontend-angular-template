@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '@angular/material';
 
 import { ExtraPagesRoutingModule } from './extra-pages-routing.module';
@@ -11,11 +12,14 @@ import { Page500Component } from './500/500.component';
 import { PageConfirmEmailComponent } from './confirm-email/confirm-email.component';
 import { PageLockScreenComponent } from './lock-screen/lock-screen.component';
 import { PageMaintenanceComponent } from './maintenance/maintenance.component';
+ import { SharedComponentModule } from '../_shared/shared-components.module'
 
 @NgModule({
   imports: [
     ExtraPagesRoutingModule,
     MaterialModule,
+    FormsModule,
+    SharedComponentModule,
   ],
   declarations: [
     PageLoginComponent,
@@ -26,7 +30,7 @@ import { PageMaintenanceComponent } from './maintenance/maintenance.component';
     PageConfirmEmailComponent,
     PageLockScreenComponent,
     PageMaintenanceComponent,
-  ]
+  ],
 })
 
 export class ExtraPagesModule {}

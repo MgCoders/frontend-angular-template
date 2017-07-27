@@ -20,6 +20,8 @@ import { FormComponentsComponent } from './components.component';
 import { FormLayoutsComponent } from './layouts/layouts.component';
 import { FormValidationComponent } from './validation/validation.component';
 
+
+
 @NgModule({
   imports: [
     MaterialModule,
@@ -43,7 +45,11 @@ import { FormValidationComponent } from './validation/validation.component';
     FormComponentsComponent,
     FormLayoutsComponent,
     FormValidationComponent,
-  ]
+  ],
+
+  exports: [
+    FormSelectComponent,
+  ],
 })
 
 export class MyFormsModule {}

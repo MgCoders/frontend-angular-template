@@ -1,4 +1,4 @@
-import { NgModule, ApplicationRef } from '@angular/core';
+import { NgModule, ApplicationRef, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
@@ -41,6 +41,15 @@ import { SharedModule } from './shared/shared.module';
 // hmr
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
+// Services
+import { AuthenticationService } from './_services/index'
+
+// Helpers
+import { AuthHelper } from './_helpers/index'
+
+// Guardas
+import { AuthGuard } from './_guards/index';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -53,6 +62,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     // Sub modules
     LayoutModule,
     SharedModule,
+ 
   ],
   declarations: [
     AppComponent,
@@ -82,8 +92,13 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     DashboardComponent,
     // Pages
     PageLayoutFullscreenComponent,
+
   ],
-  bootstrap: [AppComponent]
+  providers:[ AuthenticationService,
+              AuthGuard,
+              AuthHelper ],
+              
+  bootstrap: [AppComponent],
 })
 
 export class AppModule {
