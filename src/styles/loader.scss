@@ -41,11 +41,11 @@ $duration: 1.4s;
 }
 
 @keyframes colors {
-  0% { stroke: $brand-primary; }
-  25% { stroke: $brand-danger; }
-  50% { stroke: $brand-warning; }
-  75% { stroke: $brand-success; }
-  100% { stroke: $brand-primary; }
+  0% { stroke: theme-color("primary"); }
+  25% { stroke: theme-color("danger"); }
+  50% { stroke: theme-color("warning"); }
+  75% { stroke: theme-color("success"); }
+  100% { stroke: theme-color("primary"); }
 }
 
 @keyframes dash {

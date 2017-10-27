@@ -97,7 +97,7 @@ $theme_option_item_height: 60px;
       color: #fff;
       .material-icons {
         vertical-align: bottom;
-        color: $brand-success;
+        color: theme-color("success");
       }       
     }
   }

@@ -171,7 +171,7 @@ $Theme_dark_TL_content_bg: rgba(255,255,255,.05);
 
         h4 {
           font-size: 18px;
-          line-height: $font-size-h4;
+          line-height: $h4-font-size;
           line-height: $headings-line-height;
         }
       }
@@ -184,30 +184,30 @@ $Theme_dark_TL_content_bg: rgba(255,255,255,.05);
 .theme-gray,
 .theme-dark {
   .ui-timeline {
-  .tl-item {
-    &.alt {
-      @media (min-width: map-get($grid-breakpoints, md)) {
-        .tl-body {
-          .tl-content {
-            &:after {
-              border-left: 8px solid $Theme_dark_TL_content_bg;
-              border-top: 8px solid $Theme_dark_TL_content_bg;
+    .tl-item {
+      &.alt {
+        @media (min-width: map-get($grid-breakpoints, md)) {
+          .tl-body {
+            .tl-content {
+              &:after {
+                border-left: 8px solid $Theme_dark_TL_content_bg;
+                border-top: 8px solid $Theme_dark_TL_content_bg;
+              }
             }
           }
         }
       }
-    }
 
-    .tl-body {
-      .tl-content {
-        background-color: $Theme_dark_TL_content_bg;
-        &:after {
-          border-right: 8px solid $Theme_dark_TL_content_bg;
-          border-top: 8px solid $Theme_dark_TL_content_bg;
+      .tl-body {
+        .tl-content {
+          background-color: $Theme_dark_TL_content_bg;
+          &:after {
+            border-right: 8px solid $Theme_dark_TL_content_bg;
+            border-top: 8px solid $Theme_dark_TL_content_bg;
+          }
         }
       }
     }
-  }
   }
 }
 

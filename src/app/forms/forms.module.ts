@@ -1,7 +1,39 @@
 import { NgModule } from '@angular/core';
-import { MaterialModule, MdNativeDateModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatExpansionModule,
+  MatGridListModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatMenuModule,
+  MatNativeDateModule,
+  MatPaginatorModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatRadioModule,
+  MatRippleModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatSliderModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatSortModule,
+  MatTableModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule,
+  MatStepperModule,
+} from '@angular/material';
 
 import { FormsRoutingModule } from './forms-routing.module';
 import { FormsComponent } from './forms.component';
@@ -20,12 +52,39 @@ import { FormComponentsComponent } from './components.component';
 import { FormLayoutsComponent } from './layouts/layouts.component';
 import { FormValidationComponent } from './validation/validation.component';
 
-
-
 @NgModule({
   imports: [
-    MaterialModule,
-    MdNativeDateModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatStepperModule,
     FormsRoutingModule,
     CommonModule,
     FormsModule,
@@ -45,11 +104,7 @@ import { FormValidationComponent } from './validation/validation.component';
     FormComponentsComponent,
     FormLayoutsComponent,
     FormValidationComponent,
-  ],
-
-  exports: [
-    FormSelectComponent,
-  ],
+  ]
 })
 
 export class MyFormsModule {}

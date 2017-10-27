@@ -6,7 +6,7 @@
 .gradient-text {
   font-size: 150px;
   font-weight: 300;
-  color: $brand-primary; // fallback
+  color: theme-color("primary"); // fallback
   background: -webkit-linear-gradient(92deg, #fb83fa, #00aced);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,33 +25,28 @@
 
 .color-primary,
 a.color-primary { 
-  color: $brand-primary;
-  &:hover { color: $brand-primary; }
+  color: theme-color("primary");
+  &:hover { color: theme-color("primary"); }
 }
 .color-success,
 a.color-success { 
-  color: $brand-success;
-  &:hover { color: $brand-success; }
+  color: theme-color("success");
+  &:hover { color: theme-color("success"); }
 }
 .color-info,
 a.color-info { 
-  color: $brand-info;
-  &:hover { color: $brand-info; }
-}
-.color-info-alt,
-a.color-info-alt { 
-  color: $brand-info-alt;
-  &:hover { color: $brand-info-alt; }
+  color: theme-color("info");
+  &:hover { color: theme-color("info"); }
 }
 .color-warning,
 a.color-warning { 
-  color: $brand-warning;
-  &:hover { color: $brand-warning; }
+  color: theme-color("warning");
+  &:hover { color: theme-color("warning"); }
 }
 .color-danger,
 a.color-danger { 
-  color: $brand-danger;
-  &:hover { color: $brand-danger; }
+  color: theme-color("danger");
+  &:hover { color: theme-color("danger"); }
 }
 .color-dark,
 a.color-dark { 
@@ -65,18 +60,18 @@ a.color-white {
 }
 .color-gray-darker,
 a.color-gray-darker { 
-  color: $gray-darker;
-  &:hover { color: $gray-darker; }
+  color: $gray-200;
+  &:hover { color: $gray-200; }
 }
 .color-gray-dark,
 a.color-gray-dark { 
-  color: $gray-dark;
-  &:hover { color: $gray-dark; }
+  color: $gray-800;
+  &:hover { color: $gray-800; }
 }
 .color-gray,
 a.color-gray { 
-  color: $gray;
-  &:hover { color: $gray; }
+  color: $gray-700;
+  &:hover { color: $gray-700; }
 }
 .color-gray-light,
 a.color-gray-light { 
@@ -85,8 +80,8 @@ a.color-gray-light {
 }
 .color-gray-lighter,
 a.color-gray-lighter { 
-  color: $gray-lighter;
-  &:hover { color: $gray-lighter; }
+  color: $gray-200;
+  &:hover { color: $gray-200; }
 }
 
 
@@ -108,7 +103,7 @@ a.color-gray-lighter {
 
 .dropcap-square,
 .dropcap-circle {
-  background-color: $gray-lighter;
+  background-color: $gray-200;
   color: $body-color;
   width: 36px;
   text-align: center;
@@ -125,12 +120,12 @@ a.color-gray-lighter {
 }
 
 .dropcap.colored {
-  color: $brand-primary;
+  color: theme-color("primary");
 }
 
 .dropcap-square.colored,
 .dropcap-circle.colored {
-  background-color: $brand-primary;
+  background-color: theme-color("primary");
   color: $white;
 }
 
@@ -142,7 +137,7 @@ a.color-gray-lighter {
   border-radius: $border-radius;    
   padding: 2px 5px;
   &.colored {
-    background-color: $brand-primary;
+    background-color: theme-color("primary");
   }
 }
 

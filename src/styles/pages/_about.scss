@@ -24,7 +24,7 @@
 
     .stat-num {
       display: block;
-      color: $brand-primary;
+      color: theme-color("primary");
       font-size: 72px;
       font-weight: $font-weight-thin;
       line-height: 66px;
@@ -34,7 +34,7 @@
       display: inline-block;
       margin-bottom: -2px;
       padding-bottom: 20px;
-      border-bottom: 2px solid $brand-primary;
+      border-bottom: 2px solid theme-color("primary");
       font-size: 20px;
       line-height: 22px;
       font-weight: bold;

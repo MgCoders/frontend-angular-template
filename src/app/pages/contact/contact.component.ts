@@ -6,4 +6,12 @@ import { Component } from '@angular/core';
   templateUrl: './contact.component.html'
 })
 
-export class PageContactComponent {}
+export class PageContactComponent {
+  submitted = false;
+
+  // use `type="button"` instead of `type="submit"` to avoid refreshing
+  onSubmit() { 
+    event.preventDefault();
+    this.submitted = true;
+  }
+}

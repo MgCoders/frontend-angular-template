@@ -14,7 +14,7 @@ md-backdrop.md-sidenav-backdrop,
 
   md-tabs-canvas {
     > md-pagination-wrapper {
-      // background-color: $gray-lighter;
+      // background-color: $gray-200;
       width: 100% !important;
 
       > md-tab-item {
@@ -22,8 +22,8 @@ md-backdrop.md-sidenav-backdrop,
       }
 
       md-ink-bar {
-        color: $brand-primary;
-        background: $brand-primary;
+        color: theme-color("primary");
+        background: theme-color("primary");
       }
     }
   }

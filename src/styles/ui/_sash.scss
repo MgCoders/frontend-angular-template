@@ -76,44 +76,44 @@ $line_height: 30px;
 
   // Colors
   &.sash-primary {
-    background-color: $brand-primary;
+    background-color: theme-color("primary");
     &.sash-triangle-right:after {
-      border-color: $brand-primary;
+      border-color: theme-color("primary");
       border-right-color: transparent;
     }
   }
   &.sash-info {
-    background-color: $brand-info;
+    background-color: theme-color("info");
     &.sash-triangle-right:after {
-      border-color: $brand-info;
+      border-color: theme-color("info");
       border-right-color: transparent;
     }
   }
   &.sash-success {
-    background-color: $brand-success;
+    background-color: theme-color("success");
     &.sash-triangle-right:after {
-      border-color: $brand-success;
+      border-color: theme-color("success");
       border-right-color: transparent;
     }
   }
   &.sash-warning {
-    background-color: $brand-warning;
+    background-color: theme-color("warning");
     &.sash-triangle-right:after {
-      border-color: $brand-warning;
+      border-color: theme-color("warning");
       border-right-color: transparent;
     }
   }
   &.sash-danger {
-    background-color: $brand-danger;
+    background-color: theme-color("danger");
     &.sash-triangle-right:after {
-      border-color: $brand-danger;
+      border-color: theme-color("danger");
       border-right-color: transparent;
     }
   }
   &.sash-primary {
-    background-color: $brand-primary;
+    background-color: theme-color("primary");
     &.sash-triangle-right:after {
-      border-color: $brand-primary;
+      border-color: theme-color("primary");
       border-right-color: transparent;
     }
   }

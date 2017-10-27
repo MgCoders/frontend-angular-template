@@ -2,8 +2,8 @@
   padding-left: 30px;
   padding-right: 30px;
   &.padding-lg-h {
-    padding-left: $grid-gutter-width-base;
-    padding-right: $grid-gutter-width-base;
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
   }
   &.with-maxwidth {
     max-width: $container_fluid_maxwidth;

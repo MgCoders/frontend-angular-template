@@ -6,9 +6,9 @@
     <div class="box box-default">
       <div class="box-body">
 
-        <button md-raised-button color="accent" class="btn-w-md" (click)="activateLoader()">Start the loader</button>
+        <button mat-raised-button color="accent" class="btn-w-md" (click)="activateLoader()">Start the loader</button>
         <span class="space"></span>
-        <button md-raised-button color="warn" class="btn-w-md" (click)="hideLoader()">Complete it</button>
+        <button mat-raised-button color="warn" class="btn-w-md" (click)="hideLoader()">Complete it</button>
 
         <div class="callout callout-info no-margin-bottom">
           The loading bar will show at the top of the page.
@@ -25,28 +25,28 @@
       <div class="box-body">
 
         <div class="row">
-          <div class="col-xl-8 offset-lg-2">
+          <div class="col-xl-8 mx-auto">
             <div>
               <div class="text-center" style="padding-top: 40px;">
-                <span mdTooltip="Tooltip!" mdTooltipPosition="{{tooltipDirection}}">
-                  <button md-fab> <md-icon class="material-icons">insert_drive_file</md-icon> </button>
+                <span matTooltip="Tooltip!" matTooltipPosition="{{tooltipDirection}}">
+                  <button mat-fab> <mat-icon class="material-icons">insert_drive_file</mat-icon> </button>
                 </span>
               </div>
 
               <div class="callout callout-info">The tooltip is visible when the button is hovered, focused, or touched. </div>
               <div class="callout callout-success">
-                <p><code>mdTooltipPosition</code> attribute can used to dynamically change the direction of the tooltip.<br>
+                <p><code>matTooltipPosition</code> attribute can used to dynamically change the direction of the tooltip.<br>
                 Note: the direction default value is 'bottom'. </p>
               </div>
-              <md-radio-group class="ui-md-radio-group-inline" [(ngModel)]="tooltipDirection">
-                <md-radio-button value="left">Left</md-radio-button>
+              <mat-radio-group class="ui-md-radio-group-inline" [(ngModel)]="tooltipDirection">
+                <mat-radio-button value="left">Left</mat-radio-button>
                 <span class="space"></span>
-                <md-radio-button value="above">Above</md-radio-button>
+                <mat-radio-button value="above">Above</mat-radio-button>
                 <span class="space"></span>
-                <md-radio-button value="below">Below</md-radio-button>
+                <mat-radio-button value="below">Below</mat-radio-button>
                 <span class="space"></span>
-                <md-radio-button value="right">Right</md-radio-button>
-               </md-radio-group>
+                <mat-radio-button value="right">Right</mat-radio-button>
+               </mat-radio-group>
             </div>
           </div>
         </div>
@@ -63,16 +63,16 @@
       <div class="box-header">Basic Usage</div>
       <div class="box-body">
 
-        <md-input-container>
-          <input mdInput value="Disco party!" placeholder="Message" #message>
-        </md-input-container>
+        <mat-input-container>
+          <input matInput value="Disco party!" placeholder="Message" #message>
+        </mat-input-container>
 
-        <md-input-container>
-          <input mdInput value="Dance" placeholder="Action" #action>
-        </md-input-container>
+        <mat-input-container>
+          <input matInput value="Dance" placeholder="Action" #action>
+        </mat-input-container>
 
         <span class="space space-md"></span>
-        <button md-raised-button color="accent" class="btn-w-md" (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
+        <button mat-raised-button color="accent" class="btn-w-md" (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
 
         <div class="callout callout-info">
           <p>Only one snack-bar can ever be opened at one time.</p>
@@ -91,11 +91,11 @@
       <div class="box-body">
 
         <div class="row">
-          <div class="col-xl-8 offset-lg-2">
+          <div class="col-xl-8 mx-auto">
             <h6>Basic Usage</h6>
-            <button md-raised-button color="primary" class="btn-w-md" (click)="openDialog()">Simple dialog</button>
+            <button mat-raised-button color="primary" class="btn-w-md" (click)="openDialog()">Simple dialog</button>
             <span class="space space-md"></span>
-            <button md-raised-button color="accent" class="btn-w-md" (click)="openDialogWithAResult()">Dailog with a result</button>
+            <button mat-raised-button color="accent" class="btn-w-md" (click)="openDialogWithAResult()">Dailog with a result</button>
             <div class="callout callout-info">
               <p>You chose: {{selectedOption}}</p>
             </div>
@@ -113,15 +113,15 @@
     <div class="box box-default">
       <div class="box-body">
 
-        <md-toolbar class="rounded">
+        <mat-toolbar class="rounded">
           <span>Custom Toolbar</span>
           <span style="flex: 1 1 auto;"></span>
-          <md-icon class="material-icons">edit</md-icon>
+          <mat-icon class="material-icons">edit</mat-icon>
           <span class="space"></span>
-          <md-icon class="material-icons">favorite</md-icon>
+          <mat-icon class="material-icons">favorite</mat-icon>
           <span class="space"></span>
-          <md-icon class="material-icons">delete</md-icon>
-        </md-toolbar>
+          <mat-icon class="material-icons">delete</mat-icon>
+        </mat-toolbar>
 
       </div>
     </div>
@@ -134,29 +134,29 @@
     <div class="box box-default">
       <div class="box-body">
 
-        <md-tab-group>
-          <md-tab label="One">
+        <mat-tab-group>
+          <mat-tab label="One">
             <section class="box box-transparent">
               <div class="box-body">
                 <div class="article-title-style">Blank 1</div>
               </div>
             </section>
-          </md-tab>
-          <md-tab label="Two">
+          </mat-tab>
+          <mat-tab label="Two">
             <section class="box box-transparent">
               <div class="box-body">
                 <div class="article-title-style">Blank 2</div>
               </div>
             </section>
-          </md-tab>
-          <md-tab label="Three">
+          </mat-tab>
+          <mat-tab label="Three">
             <section class="box box-transparent">
               <div class="box-body">
                 <div class="article-title-style">Blank 3</div>
               </div>
             </section>
-          </md-tab>
-        </md-tab-group>
+          </mat-tab>
+        </mat-tab-group>
 
       </div>
     </div>
@@ -205,7 +205,7 @@
           <div class="box-header">Badges</div>
           <div class="box-body">
             <p>
-              <span class="badge badge-default">7</span>
+              <span class="badge badge-light">7</span>
               <span class="space"></span>
               <span class="badge badge-primary">1</span>
               <span class="space"></span>
@@ -217,6 +217,8 @@
               <span class="badge badge-warning">8</span>
               <span class="space"></span>
               <span class="badge badge-danger">16</span>                 
+              <span class="space"></span>
+              <span class="badge badge-dark">7</span>
             </p>
           </div>
         </div>  
@@ -226,7 +228,7 @@
           <div class="box-header">Pill Badges</div>
           <div class="box-body">
             <p>
-              <span class="badge badge-pill badge-default">Default</span>
+              <span class="badge badge-pill badge-light">Light</span>
               <span class="space"></span>
               <span class="badge badge-pill badge-primary">Primary</span>
               <span class="space"></span>
@@ -238,6 +240,8 @@
               <span class="badge badge-pill badge-warning">Warning</span>
               <span class="space"></span>
               <span class="badge badge-pill badge-danger">Danger</span> 
+              <span class="space"></span>
+              <span class="badge badge-pill badge-dark">Dark</span> 
             </p>
           </div>
         </div>          
@@ -258,19 +262,19 @@
 
             <p>Determinate</p>
             <div class="divider"></div>
-            <md-progress-bar mode="determinate" [value]="determinateValue"></md-progress-bar>
+            <mat-progress-bar mode="determinate" [value]="determinateValue"></mat-progress-bar>
             <div class="divider divider-lg divider-dashed"></div>
             <p>Indeterminate</p>
             <div class="divider"></div>
-            <md-progress-bar mode="indeterminate"></md-progress-bar>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
             <div class="divider divider-lg divider-dashed"></div>
             <p>Buffer</p>
             <div class="divider"></div>
-            <md-progress-bar color="warn" mode="buffer" [value]="determinateValue" [bufferValue]="determinateValue2"></md-progress-bar>
+            <mat-progress-bar color="warn" mode="buffer" [value]="determinateValue" [bufferValue]="determinateValue2"></mat-progress-bar>
             <div class="divider divider-lg divider-dashed"></div>
             <p>Query</p>
             <div class="divider"></div>
-            <md-progress-bar mode="query"></md-progress-bar>
+            <mat-progress-bar mode="query"></mat-progress-bar>
 
           </div>
         </div>
@@ -283,20 +287,20 @@
             <div class="row">
               <div class="col-xl-6">
                 <p>Determinate</p>
-                <md-progress-spinner mode="determinate" [value]="determinateValue"></md-progress-spinner>
+                <mat-progress-spinner mode="determinate" [value]="determinateValue"></mat-progress-spinner>
               </div>
               <div class="col-xl-6">
                 <p>Indeterminate</p>
-                <md-progress-spinner mode="indeterminate"></md-progress-spinner>
+                <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
               </div>
             </div>        
             <div class="divider divider-lg divider-dashed"></div>
 
             <p>Theming</p>
             <div class="row">
-              <div class="col-md-4"><md-progress-spinner mode="indeterminate"></md-progress-spinner></div>
-              <div class="col-md-4"><md-progress-spinner mode="indeterminate" color="accent"></md-progress-spinner></div>
-              <div class="col-md-4"><md-progress-spinner mode="indeterminate" color="warn"></md-progress-spinner></div>
+              <div class="col-md-4"><mat-progress-spinner mode="indeterminate"></mat-progress-spinner></div>
+              <div class="col-md-4"><mat-progress-spinner mode="indeterminate" color="accent"></mat-progress-spinner></div>
+              <div class="col-md-4"><mat-progress-spinner mode="indeterminate" color="warn"></mat-progress-spinner></div>
             </div>
 
           </div>

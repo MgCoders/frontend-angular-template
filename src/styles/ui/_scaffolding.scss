@@ -5,7 +5,7 @@
   font-weight: normal;
   line-height: 32px;
   margin: .6em 0;
-  color: $brand-primary;
+  color: theme-color("primary");
   &.color-dark {
     color: $body-color;
   }
@@ -47,7 +47,7 @@
     line-height: 32px;
     margin: 48px 0 30px;
     border-top: 1px solid rgba(0, 0, 0, 0.117647);
-    color: $brand-primary;
+    color: theme-color("primary");
   }
 }
 

@@ -1,19 +1,19 @@
 
 // validation
-md-input-container:not(.ng-pristine) {
+mat-input-container:not(.ng-pristine) {
   &.ng-invalid {
     .mat-input-underline {
-      border-color: $brand-danger;
+      border-color: theme-color("danger");
       .mat-input-ripple {
-        background-color: $brand-danger;
+        background-color: theme-color("danger");
       }
     }
   }
   &.ng-valid {
     .mat-input-underline {
-      border-color: $brand-success;
+      border-color: theme-color("success");
       .mat-input-ripple {
-        background-color: $brand-success;
+        background-color: theme-color("success");
       }
     }
   }

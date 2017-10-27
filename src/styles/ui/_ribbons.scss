@@ -22,14 +22,14 @@
     top: 15px;
     width: 120px;
     line-height: 20px;
-    background-color: $gray;
+    background-color: $gray-700;
     box-shadow: 0 0 3px rgba(0,0,0,0.3);
     &:before,
     &:after {
       position: absolute;
       content: " ";
       line-height: 0;
-      border-top: 2px solid $gray;
+      border-top: 2px solid $gray-700;
       border-left: 2px solid transparent;
       border-right: 2px solid transparent;
       bottom: -2px;
@@ -46,46 +46,46 @@
   // color
   &.ui-ribbon-primary {
     .ui-ribbon {
-      background-color: $brand-primary;
+      background-color: theme-color("primary");
       &:before,
       &:after {
-        border-top: 2px solid $brand-primary;
+        border-top: 2px solid theme-color("primary");
       }
     }
   }
   &.ui-ribbon-success {
     .ui-ribbon {
-      background-color: $brand-success;
+      background-color: theme-color("success");
       &:before,
       &:after {
-        border-top: 2px solid $brand-success;
+        border-top: 2px solid theme-color("success");
       }
     }
   }
   &.ui-ribbon-info {
     .ui-ribbon {
-      background-color: $brand-info;
+      background-color: theme-color("info");
       &:before,
       &:after {
-        border-top: 2px solid $brand-info;
+        border-top: 2px solid theme-color("info");
       }
     }
   }
   &.ui-ribbon-warning {
     .ui-ribbon {
-      background-color: $brand-warning;
+      background-color: theme-color("warning");
       &:before,
       &:after {
-        border-top: 2px solid $brand-warning;
+        border-top: 2px solid theme-color("warning");
       }
     }
   }
   &.ui-ribbon-danger {
     .ui-ribbon {
-      background-color: $brand-danger;
+      background-color: theme-color("danger");
       &:before,
       &:after {
-        border-top: 2px solid $brand-danger;
+        border-top: 2px solid theme-color("danger");
       }
     }
   }

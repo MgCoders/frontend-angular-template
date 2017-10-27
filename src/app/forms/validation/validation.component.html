@@ -7,45 +7,45 @@
 
         <form [formGroup]="validationForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
-            <md-input-container class="full-width">
-              <input mdInput formControlName="requiredInput" placeholder="Input required">
-            </md-input-container>
+            <mat-input-container class="full-width">
+              <input matInput formControlName="requiredInput" placeholder="Input required">
+            </mat-input-container>
           </div>
           <div class="form-group">
-            <md-input-container class="full-width">
-              <textarea mdInput formControlName="requiredTextarea" placeholder="Textarea Required"></textarea>
-            </md-input-container>
+            <mat-input-container class="full-width">
+              <textarea matInput formControlName="requiredTextarea" placeholder="Textarea Required"></textarea>
+            </mat-input-container>
           </div>
           <div class="form-group">
-            <md-input-container class="full-width">
-              <input mdInput formControlName="requiredMinLength" placeholder="Required. Min length 3">
-            </md-input-container>
+            <mat-input-container class="full-width">
+              <input matInput formControlName="requiredMinLength" placeholder="Required. Min length 3">
+            </mat-input-container>
           </div>
           <div class="form-group">
-            <md-input-container class="full-width">
-              <input mdInput formControlName="requiredMaxLength" placeholder="Required. Max length 10">
-            </md-input-container>
+            <mat-input-container class="full-width">
+              <input matInput formControlName="requiredMaxLength" placeholder="Required. Max length 10">
+            </mat-input-container>
           </div>
           <div class="form-group">
-            <md-input-container class="full-width">
-              <input mdInput formControlName="requiredMinMaxLength" placeholder="Required. Min length 3, Max length 10">
-            </md-input-container>
+            <mat-input-container class="full-width">
+              <input matInput formControlName="requiredMinMaxLength" placeholder="Required. Min length 3, Max length 10">
+            </mat-input-container>
           </div>
           <div class="form-group">
-            <md-input-container class="full-width">
-              <input mdInput formControlName="requiredPatternFoo" placeholder="Required. Match a pattern, equal to 'foo'">
-            </md-input-container>
+            <mat-input-container class="full-width">
+              <input matInput formControlName="requiredPatternFoo" placeholder="Required. Match a pattern, equal to 'foo'">
+            </mat-input-container>
           </div>
           <div class="form-group">
-            <md-input-container class="full-width">
-              <input mdInput formControlName="requiredPattern" placeholder="Required. Match a pattern, hex color code like #e5e5e5 or #fff">
-            </md-input-container>
+            <mat-input-container class="full-width">
+              <input matInput formControlName="requiredPattern" placeholder="Required. Match a pattern, hex color code like #e5e5e5 or #fff">
+            </mat-input-container>
           </div>
 
           <div class="divider divider-md"></div>
-          <button md-raised-button type="submit" class="btn-w-md" color="primary" [disabled]="!validationForm.valid">Submit</button>
+          <button mat-raised-button type="submit" class="btn-w-md" color="primary" [disabled]="!validationForm.valid">Submit</button>
           <span class="space space-md"></span>
-          <button md-raised-button type="button" class="btn-w-md" (click)="onResetForm()">Reset</button>
+          <button mat-raised-button type="button" class="btn-w-md" (click)="onResetForm()">Reset</button>
         </form>
 
         <div class="callout callout-info">

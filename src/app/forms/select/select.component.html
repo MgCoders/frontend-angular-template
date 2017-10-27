@@ -6,14 +6,18 @@
     <div class="box box-default">
       <div class="box-header">Basic Usage</div>
       <div class="box-body">
-        <md-select placeholder="Favorite food" [(ngModel)]="selectedValue">
-          <md-option *ngFor="let food of foods" [value]="food.value">
-          {{ food.viewValue }}
-          </md-option>
-        </md-select>
-        <div class="callout callout-info">
-          <p>Selected value: {{selectedValue}}</p>
-        </div>
+        <form>
+          <mat-form-field>
+            <mat-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="callout callout-info">
+            <p>Selected value: {{selectedValue}}</p>
+          </div>
+        </form>
       </div>
     </div>
 

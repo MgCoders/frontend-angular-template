@@ -1,9 +1,9 @@
+import * as jQuery from 'jquery';
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
 import { APPCONFIG } from './config';
 import { LayoutService } from './layout/layout.service';
-import * as jQuery from 'jquery';
 
 // 3rd
 import 'styles/material2-theme.scss';
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      document.body.scrollTop = 0;
+      window.scrollTo(0, 0);
     });
   }
 }

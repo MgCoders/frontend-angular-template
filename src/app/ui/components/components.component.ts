@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MdSnackBar, MdDialog } from '@angular/material';
+import { MatSnackBar, MatDialog } from '@angular/material';
 import { LayoutService } from '../../layout/layout.service';
 import { DialogOverviewExampleDialogComponent } from './dialog-overview-example-dialog.component';
 import { DialogResultExampleDialogComponent } from './dialog-result-example-dialog.component';
@@ -11,7 +11,7 @@ import { DialogResultExampleDialogComponent } from './dialog-result-example-dial
 })
 
 export class UIComponentsComponent {
-  constructor(public snackBar: MdSnackBar, public dialog: MdDialog, private layoutService: LayoutService) {}
+  constructor(public snackBar: MatSnackBar, public dialog: MatDialog, private layoutService: LayoutService) {}
 
   //
   activateLoader() {

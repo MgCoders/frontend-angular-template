@@ -35,24 +35,24 @@
           <div class="box box-transparent">
             <div class="box-body padding-lg-h">
               <h4>Contact</h4>
-              <form name="contactForm">
+              <form name="contactForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
-                  <md-input-container class="full-width">
-                    <input mdInput placeholder="Name">
-                  </md-input-container>
+                  <mat-input-container class="full-width">
+                    <input matInput placeholder="Name">
+                  </mat-input-container>
                 </div>
                 <div class="form-group">
-                  <md-input-container class="full-width">
-                    <input mdInput placeholder="Email" type="email">
-                  </md-input-container>
+                  <mat-input-container class="full-width">
+                    <input matInput placeholder="Email" type="email">
+                  </mat-input-container>
                 </div>
                 <div class="form-group">
-                  <md-input-container class="full-width">
-                    <textarea mdInput placeholder="Message" md-maxlength="150" rows="4"></textarea>
-                  </md-input-container>
+                  <mat-input-container class="full-width">
+                    <textarea matInput placeholder="Message" mat-maxlength="150" rows="4"></textarea>
+                  </mat-input-container>
                 </div>
                 <div class="divider"></div>
-                <button md-raised-button color="primary" class="btn-w-md">Submit</button>
+                <button mat-raised-button color="primary" class="btn-w-md" type="button">Submit</button>
               </form>
             </div>
           </div>

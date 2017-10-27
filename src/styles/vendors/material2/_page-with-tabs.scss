@@ -8,16 +8,16 @@
       font-size: 20px;
       line-height: 1;
       font-weight: $headings-font-weight;
-      color: $brand-primary;
+      color: theme-color("primary");
     }
   }
 
-  > md-tab-group {
-    > md-tab-header {
+  > mat-tab-group {
+    > mat-tab-header {
       background-color: rgba(#000, .05);
       border-bottom: 1px solid rgba(#000, .05);
     }
   }
 
-  .md-tab-body-wrapper {}
+  .mat-tab-body-wrapper {}
 }

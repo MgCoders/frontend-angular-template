@@ -1,21 +1,17 @@
-# Template Angular para proyectos Front-End 
- - Este template contiene un ptoyecto báscio generado con [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
- - Incluye el template "Material Design Angular 4 Admin Web App with Bootstrap 4"
- comprado en https://themeforest.net y la documentación correspondiente al mismo
- esta en /documentation.
+# Sulfur
+
+## Template
+https://themeforest.net/item/material-design-angular-2-admin-web-app-with-bootstrap-4/19421267
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Development server
 
-Para correr en modo de desarrollo:
-
-    npm install
-    ng serve
-
-Luego acceder a: http://localhost:4200
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -28,7 +24,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help
 

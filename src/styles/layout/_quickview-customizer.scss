@@ -137,12 +137,12 @@ $customizer_bg:      #fafafa;
 
 .theme-gray {
   .customizer {
-    background-color: grayscale($dark-light);
+    background-color: $grayscale-dark-light;
     &:before {
-      background-color: grayscale($dark-light);
+      background-color: $grayscale-dark-light;
     }
     &:after{
-      background-color: grayscale($dark-light);
+      background-color: $grayscale-dark-light;
     }
   }
 }

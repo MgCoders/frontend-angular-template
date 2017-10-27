@@ -3,42 +3,40 @@
     <div class="card card-white">
       <div class="card-content">
         <div class="logo">
-          Registro de Usuario
+          <a [routerLink]="['/']">Sign Up</a>
         </div>
 
-        <form name="material_signup_form" class="md-form-auth">
+        <form name="material_signup_form">
           <fieldset>
             <div class="form-group">
-              <md-input-container class="full-width md-icon-left">
-                <md-icon class="material-icons">mail_outline</md-icon>
-                <input required mdInput type="email" name="email" placeholder="Email" [(ngModel)]="usuarioActual.email">
-              </md-input-container>
+              <mat-input-container class="full-width">
+                <input required matInput type="text" name="name" placeholder="Username">
+                <mat-icon matSuffix class="material-icons">perm_identity</mat-icon>
+              </mat-input-container>
             </div>
 
             <div class="form-group">
-              <md-input-container class="full-width md-icon-left no-margin-bottom">
-                <md-icon class="material-icons">lock_outline</md-icon>
-                <input required mdInput type="password" name="password" placeholder="Password" [(ngModel)]="usuarioActual.password">
-              </md-input-container>
+              <mat-input-container class="full-width">
+                <input required matInput type="email" name="email" placeholder="Email">
+                <mat-icon matSuffix class="material-icons">mail_outline</mat-icon>
+              </mat-input-container>
             </div>
 
-            <div class="form-group">
-              <md-input-container class="full-width md-icon-left no-margin-bottom">
-                <md-icon class="material-icons">lock_outline</md-icon>
-                <input required mdInput type="password" name="password2" placeholder="Repetir Password" [(ngModel)]="repetirPassword">
-              </md-input-container>
-            </div>
-
-            <div class="form-group" style="padding-left: 40px">                            
-              <app-user-role-select [user]="usuarioActual"></app-user-role-select>
-            </div>
+            <mat-input-container class="full-width no-margin-bottom">
+              <input required matInput type="password" name="password" placeholder="Password">
+              <mat-icon matSuffix class="material-icons">lock_outline</mat-icon>
+            </mat-input-container>
+            <p class="text-small no-margin">By clicking on sign up, you agree to <a href="javascript:;"><i>terms</i></a> and <a href="javascript:;"><i>privacy policy</i></a></p>
 
             <div class="divider divider-md"></div>
-
-            <button (click)="guardar()" md-raised-button type="button" color="primary" class="float-right">Registrarse</button>
+            <button [routerLink]="['/']" mat-raised-button type="button" color="primary" class="float-right">Sign Up</button>
           </fieldset>
         </form>
+
+        <div class="additional-info">
+          <a [routerLink]="['/extra/login']">Login</a>
+        </div>
       </div>
-    </div>
+    </div> 
   </div>
 </div>

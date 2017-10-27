@@ -1,6 +1,7 @@
 // for Directive: accordionNav
 .app-sidebar ul.nav {
   flex-direction: column;
+  flex-wrap: nowrap;
   ul {
     display: none; // hide all sub ul on init
   }

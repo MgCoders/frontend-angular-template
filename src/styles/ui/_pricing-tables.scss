@@ -88,63 +88,63 @@
   // color
   &.pricing-table-primary {
     header {
-      background-color: darken($brand-primary, 5%);
+      background-color: darken(theme-color("primary"), 5%);
     }
     .pricing-price {
-      background-color: $brand-primary;
+      background-color: theme-color("primary");
     }
     &:after {
-      border-top: 6px solid $brand-primary;
-      border-left: 6px solid $brand-primary;
+      border-top: 6px solid theme-color("primary");
+      border-left: 6px solid theme-color("primary");
     }
   }
    &.pricing-table-secondary,
   &.pricing-table-info {
     header {
-      background-color: darken($brand-info, 5%);
+      background-color: darken(theme-color("info"), 5%);
     }
     .pricing-price {
-      background-color: $brand-info;
+      background-color: theme-color("info");
     }
     &:after {
-      border-top: 6px solid $brand-info;
-      border-left: 6px solid $brand-info;
+      border-top: 6px solid theme-color("info");
+      border-left: 6px solid theme-color("info");
     }
   }
   &.pricing-table-success {
     header {
-      background-color: darken($brand-success, 5%);
+      background-color: darken(theme-color("success"), 5%);
     }
     .pricing-price {
-      background-color: $brand-success;
+      background-color: theme-color("success");
     }
     &:after {
-      border-top: 6px solid $brand-success;
-      border-left: 6px solid $brand-success;
+      border-top: 6px solid theme-color("success");
+      border-left: 6px solid theme-color("success");
     }
   }
   &.pricing-table-warning {
     header {
-      background-color: darken($brand-warning, 5%);
+      background-color: darken(theme-color("warning"), 5%);
     }
     .pricing-price {
-      background-color: $brand-warning;
+      background-color: theme-color("warning");
     }
     &:after {
-      border-top: 6px solid $brand-warning;
-      border-left: 6px solid $brand-warning;
+      border-top: 6px solid theme-color("warning");
+      border-left: 6px solid theme-color("warning");
     }
   }
   &.pricing-table-danger {
     header {
-      background-color: darken($brand-danger, 5%);
+      background-color: darken(theme-color("danger"), 5%);
     }
     .pricing-price {
-      background-color: $brand-danger;
+      background-color: theme-color("danger");
     }
     &:after {
-      border-top: 6px solid $brand-danger;
-      border-left: 6px solid $brand-danger;
+      border-top: 6px solid theme-color("danger");
+      border-left: 6px solid theme-color("danger");
     }
   }
 

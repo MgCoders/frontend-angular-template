@@ -1,10 +1,10 @@
-import { FrontEndTemplatePage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('front-end-template App', () => {
-  let page: FrontEndTemplatePage;
+describe('sulfur App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new FrontEndTemplatePage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {

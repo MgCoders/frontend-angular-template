@@ -81,8 +81,8 @@ $skin-gray: rgba(221,221,221,.3);
   margin-top: 25px;
   border-bottom: $skin-gray 2px solid;
   position: relative;
-  &.brand-info { border-color: $brand-info; }
-  &.brand-success { border-color: $brand-success; }
+  &.brand-info { border-color: theme-color("info"); }
+  &.brand-success { border-color: theme-color("success"); }
   .vprogressbar {
     padding-left: 10px;
     li {

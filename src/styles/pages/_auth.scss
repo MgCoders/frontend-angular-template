@@ -1,25 +1,8 @@
 $padding-for-icon: 40px;
 
-.md-form-auth {
-  md-input-container.md-icon-left {
-    padding-left: $padding-for-icon;
-  }
-
-  md-input-container {
-    > md-icon {
-      color: $gray-light2;
-      margin-top: -5px; // align with label
-    }
-  }
-
-  button[type="submit"],
-  a[type="submit"] {
-    margin-right: 0;
-  }
-}
 
 .page-auth {
-  background-color: $gray-lighter;
+  background-color: $gray-200;
   min-height: 100%;
   background: url('#{$image_path}background/2.png') no-repeat center center fixed; 
   background-size: cover;
@@ -30,7 +13,6 @@ $padding-for-icon: 40px;
     padding: 40px 30px;
   }
   .logo {
-    padding-left: ($padding-for-icon - 4);
     font-size: 32px;
     &.text-center {
       padding: 0;

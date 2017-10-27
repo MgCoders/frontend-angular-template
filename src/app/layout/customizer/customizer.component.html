@@ -1,4 +1,4 @@
-<section class="quickview-wrapper customizer hidden-lg-down" id="quickview-customizer">
+<section class="quickview-wrapper customizer d-none d-lg-block d-xl-block" id="quickview-customizer">
   <a class="customizer-close" href="javascript:;" myToggleQuickview="customizer"><span class="material-icons">close</span></a>
   <a class="customizer-toggle" href="javascript:;" myToggleQuickview="customizer"><span class="material-icons">settings</span></a>
 
@@ -10,32 +10,32 @@
       <div class="divider divider-lg divider-solid"></div>
       <h4 class="section-header">Layout Options</h4>
       <div class="divider divider-sm"></div>
-      <md-list>
-        <md-list-item>
+      <mat-list>
+        <mat-list-item>
           <p>Fixed Header</p>
-          <md-slide-toggle class="md-secondary" [(ngModel)]="AppConfig.fixedHeader"></md-slide-toggle>
-        </md-list-item>
-        <md-list-item>
+          <mat-slide-toggle class="mat-secondary" [(ngModel)]="AppConfig.fixedHeader"></mat-slide-toggle>
+        </mat-list-item>
+        <mat-list-item>
           <p>Collapsed Sidebar</p>
-          <md-slide-toggle class="md-secondary" [(ngModel)]="AppConfig.navCollapsed" (change)="onLayoutChange()"></md-slide-toggle>
-        </md-list-item>
-        <md-list-item>
+          <mat-slide-toggle class="mat-secondary" [(ngModel)]="AppConfig.navCollapsed" (change)="onLayoutChange()"></mat-slide-toggle>
+        </mat-list-item>
+        <mat-list-item>
           <p>Full Width Header</p>
-          <md-slide-toggle class="md-secondary" [(ngModel)]="AppConfig.navBehind"></md-slide-toggle>
-        </md-list-item>
-        <md-list-item>
+          <mat-slide-toggle class="mat-secondary" [(ngModel)]="AppConfig.navBehind"></mat-slide-toggle>
+        </mat-list-item>
+        <mat-list-item>
           <p>Boxed Layout</p>
-          <md-slide-toggle class="md-secondary" [(ngModel)]="AppConfig.layoutBoxed" (change)="onLayoutChange()"></md-slide-toggle>
-        </md-list-item>
-        <md-list-item>
+          <mat-slide-toggle class="mat-secondary" [(ngModel)]="AppConfig.layoutBoxed" (change)="onLayoutChange()"></mat-slide-toggle>
+        </mat-list-item>
+        <mat-list-item>
           <p>Sidebar Width</p>
-          <md-select class="no-margin" [(ngModel)]="AppConfig.sidebarWidth" (change)="onLayoutChange()">
-            <md-option value="small">small</md-option>
-            <md-option value="middle" >middle</md-option>
-            <md-option value="large" >large</md-option>
-          </md-select>
-        </md-list-item>
-      </md-list>
+          <mat-select class="no-margin" style="width: 80px;" [(ngModel)]="AppConfig.sidebarWidth" (change)="onLayoutChange()">
+            <mat-option value="small">small</mat-option>
+            <mat-option value="middle" >middle</mat-option>
+            <mat-option value="large" >large</mat-option>
+          </mat-select>
+        </mat-list-item>
+      </mat-list>
 
 
       <div class="divider divider-lg divider-solid"></div>
