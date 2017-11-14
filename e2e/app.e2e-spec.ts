@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('sulfur App', () => {
+describe('your-project-name App', () => {
   let page: AppPage;
 
   beforeEach(() => {
